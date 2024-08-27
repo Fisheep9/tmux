@@ -4,10 +4,19 @@
 
 `tmux`（Terminal Multiplexer） 是一个终端复用器，它允许你在一个单一的终端窗口中运行多个终端会话，并在不同的会话之间轻松切换
 
+## 基本概念
+
+Tmux中有几个概念，分别是Session会话、Window窗口和Pane面板，它们之间的关系如下图所示：
+
+![session](./image/session.png)
+
+在Tmux服务中，可有多个Session，一个Session下可有多个Window，一个Window下可有多个Pane。
+在创建一个Session时，会默认创建一个Window，包括一个Pane。
+
 ## 特性
 
 - 持久会话：`tmux` 允许你启动一个会话，然后可以随时断开连接，而不终止该会话中的进程。
-- 多窗口和多面板：`tmux` 允许你在同一个会话中打开多个窗口，每个窗口可以分割成多个面板
+- 多窗口和多面板：`tmux` 允许你在同一个会话中打开多个窗口，每个窗口可以分割成多个面板。
 - 团队协作：`tmux` 支持多用户连接到同一个会话，看到相同的终端输出，并且可以共同操作。
 
 ## 使用
@@ -135,6 +144,12 @@ tmux source ~/.tmux.conf
 
 ## 参考
 
+https://segmentfault.com/a/1190000040004297
+
 https://louiszhai.github.io/2017/09/30/tmux/#%E9%9D%A2%E6%9D%BF%E5%A4%A7%E5%B0%8F%E8%B0%83%E6%95%B4
 
 https://bbs.tampermonkey.net.cn/thread-2954-1-1.html
+
+## TODO
+
+- 需要ssh远程打开多个终端时，tmux的使用方法介绍
