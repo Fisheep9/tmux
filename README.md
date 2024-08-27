@@ -69,6 +69,9 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # 状态条显示在上方
 set-option -g status-position top
 
+# 鼠标拖动、选择功能
+set-option -g mouse on
+
 # 修改leader键为Ctrl+a
 unbind C-b
 set-option -g prefix C-a
